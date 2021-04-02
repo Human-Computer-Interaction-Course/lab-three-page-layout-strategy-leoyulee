@@ -1,15 +1,46 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Leo Lee -->
 <html>
     <head>
         <title>MPLS Dogboarding </title>
         <style>
-        
+            #container {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(3, 105px auto 15%);
+                width: 100vw;
+                height: 100vh;
+            }
+            header {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start:1;
+                grid-row-end:1;
+            }
+            header img {
+                display: block;
+                width: 20%;
+                margin: auto;
+            }
+            main {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start:2;
+                grid-row-end:2;
+            }
+            footer {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start:3;
+                grid-row-end:3;
+                padding-top: 40px;
+            }
+
         </style>
     </head>
     <body>
         <div id="container">
             <header>
-                <img src="" alt="">
+                <img src="./img/mpls_dog_logo.png" alt="MPLS Dogboarding Logo">
             </header>
             <main id="flexcontainer">
                 <aside>
