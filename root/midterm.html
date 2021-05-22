@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Leo Lee -->
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mid-term</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+            }
+            #container {
+                width: 1200px;
+                margin: auto;
+            }
+            header {
+                width: 1200px;
+                height: 250px;
+                border: 1px solid green;
+            }
+            main{
+                display: grid;
+                grid-template-columns: 250px 930px;
+                grid-template-rows: 800px;
+                grid-template-areas: "left right";
+            }
+            #leftBox{
+                grid-area: left;
+                border: 1px solid orange;
+            }
+            #rightBox{
+                
+                grid-area: right;
+                border: 1px solid red;
+            }
+            footer {
+                width: 1200px;
+                height: 250px;
+                border: 1px solid blue;
+                clear: both;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <p>Hello, header!</p>>
+            </header>
+            <main>
+                <div id="leftBox">
+                    <p>Hello there!</p>
+                </div>
+                <div id="rightBox">
+                    <p>General Kenobi!</p>
+                </div>
+            </main>
+            <footer>
+                <p>Good bye, footer!</p>
+            </footer>
+        </div>
+    </body>
+</html>
